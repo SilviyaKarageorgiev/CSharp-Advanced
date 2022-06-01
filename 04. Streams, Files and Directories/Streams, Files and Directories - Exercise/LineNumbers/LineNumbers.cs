@@ -2,6 +2,7 @@
 {
     using System;
     using System.IO;
+    using System.Linq;
 
     public class LineNumbers
     {
@@ -23,10 +24,15 @@
                 using (reader)
                 {
                     int counter = 1;
+                    int countLetters = 0;
+                    int countSymbols = 0;
+
                     string line;
                     while ((line = reader.ReadLine()) != null)
                     {
-                        writer.WriteLine($"{counter}. {line}");
+                        countLetters = line.Count(char.IsLetter);
+                        countSymbols = line.Count(char.IsPunctuation);
+                        writer.WriteLine($"Line {counter}: {line} ({countLetters})({countSymbols})");
                         counter++;
                     }
                 }
