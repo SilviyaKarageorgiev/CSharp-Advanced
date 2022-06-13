@@ -10,7 +10,6 @@ namespace P08.Threeuple
             string name = input1[0] + " " + input1[1];
             string address = input1[2];
             string town = input1.Length > 4 ? input1[3] + " " + input1[4] : input1[3];
-            
 
             Threeuple<string, string, string> personInfo = new Threeuple<string, string, string>(name, address, town);
 
