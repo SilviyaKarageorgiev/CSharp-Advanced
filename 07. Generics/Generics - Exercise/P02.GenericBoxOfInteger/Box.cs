@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace P01.GenericBoxOfString
+namespace P02.GenericBoxOfInteger
 {
     public class Box<T>
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace P01.GenericBoxOfString
+namespace P03.GenericSwapMethodString
 {
     public class Box<T>
     {

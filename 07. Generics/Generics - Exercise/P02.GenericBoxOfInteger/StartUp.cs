@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P01.GenericBoxOfString
+namespace P02.GenericBoxOfInteger
 {
     internal class StartUp
     {

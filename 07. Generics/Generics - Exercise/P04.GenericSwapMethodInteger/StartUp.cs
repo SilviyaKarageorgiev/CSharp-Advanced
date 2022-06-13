@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace P01.GenericBoxOfString
+namespace P04.GenericSwapMethodInteger
 {
     internal class StartUp
     {
@@ -21,11 +21,6 @@ namespace P01.GenericBoxOfString
             int index2 = int.Parse(indeces.Split(' ', StringSplitOptions.RemoveEmptyEntries)[1]);
 
             box.Swap(index1, index2);
-
-            //int toSwapIndex1 = box.Items[index1];
-            //int toSwapIndex2 = box.Items[index2];
-            //box.Items[index1] = toSwapIndex2;
-            //box.Items[index2] = toSwapIndex1;
 
             Console.WriteLine(box);
         }
